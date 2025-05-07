@@ -3,4 +3,5 @@ langchain==0.1.11
 langchain-openai==0.0.8
 python-dotenv==1.0.1
 faiss-cpu==1.8.0
-llama-index==0.12.30 
+llama-index==0.12.30
+chromadb==1.0.8 

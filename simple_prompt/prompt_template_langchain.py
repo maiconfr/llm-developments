@@ -1,6 +1,7 @@
 from langchain_openai import ChatOpenAI
 from langchain_core.prompts import PromptTemplate
 
+
 import os
 try:
     # load environment variables from .env file (requires `python-dotenv`)
@@ -24,7 +25,7 @@ prompt = PromptTemplate(
 
 print(prompt)
 
-llm = OpenAI(
+llm = ChatOpenAI(
     model="gpt-4o-mini",
     temperature=0.5,
     api_key=os.getenv("OPENAI_API_KEY")
